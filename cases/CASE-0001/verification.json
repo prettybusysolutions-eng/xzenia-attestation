@@ -1,0 +1,27 @@
+{
+  "case_id": "CASE-0001",
+  "recorded_at": null,
+  "verification_status": "pending",
+  "checks": [
+    {
+      "name": "issue_anchor_exists",
+      "target": "github://prettybusysolutions-eng/xzenia-attestation/issues/1",
+      "status": "passed"
+    },
+    {
+      "name": "pull_request_exists",
+      "target": "github://prettybusysolutions-eng/xzenia-attestation/pulls/<pending>",
+      "status": "pending"
+    },
+    {
+      "name": "workflow_run_succeeds",
+      "target": "github://prettybusysolutions-eng/xzenia-attestation/actions/runs/<pending>",
+      "status": "pending"
+    },
+    {
+      "name": "merge_visible",
+      "target": "github://prettybusysolutions-eng/xzenia-attestation/commit/<pending>",
+      "status": "pending"
+    }
+  ]
+}

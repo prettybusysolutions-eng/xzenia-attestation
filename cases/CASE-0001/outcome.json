@@ -1,0 +1,10 @@
+{
+  "case_id": "CASE-0001",
+  "recorded_at": null,
+  "outcome_type": "pending",
+  "outcome_value": null,
+  "outcome_notes": "Awaiting PR creation, workflow verification, merge, and issue closure.",
+  "evidence_refs": [
+    "https://github.com/prettybusysolutions-eng/xzenia-attestation/issues/1"
+  ]
+}
