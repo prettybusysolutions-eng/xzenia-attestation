@@ -39,3 +39,10 @@ A governance claim counts only if GitHub settings or public repo state actually 
 
 ## Current honest boundary
 The repository now has real branch protection, but it is still a single-principal setup and admins are not yet forced through the same review gate (`enforce_admins=false`). That means governance is materially stronger than before, but not yet strong separation-of-duties proof.
+
+## Observed bypass evidence
+A direct admin push to `master` after branch protection was enabled succeeded with GitHub explicitly reporting bypassed rule violations:
+- "Changes must be made through a pull request"
+- "Required status check \"Attestation Check\" is expected"
+
+That observed event confirms the exact remaining weakness: the branch protection is real, but admin bypass remains part of the current trust model.
