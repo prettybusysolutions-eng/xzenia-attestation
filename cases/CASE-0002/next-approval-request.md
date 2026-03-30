@@ -6,20 +6,19 @@ Add a second governed human GitHub principal to `prettybusysolutions-eng/xzenia-
 ## Why this is first
 This is the highest-proof-value next move because it is the first mutation that can advance real approval separation rather than only automation.
 
-## Required missing inputs
+## Required missing input
 1. `github_username` — the exact GitHub account to add
-2. `role` — the minimum collaborator role that still allows review participation
 
 ## Recommended starting role
-Use the minimum role that allows:
-- repo access
-- PR review participation
-- CODEOWNERS review satisfaction where relevant
+Use **`write`** as the starting collaborator role.
 
-Do **not** grant admin by default unless there is a specific justified reason.
+Rationale:
+- strong candidate for the minimum practical role that still supports meaningful PR review participation
+- avoids overshooting to admin by default
+- reduces the risk of a paper-only review path that is not operationally sufficient
 
 ## Exact approval text
-Approved: add collaborator `<github-username>` to `prettybusysolutions-eng/xzenia-attestation` with role `<role>` for CASE-0002 governance migration.
+Approved: add collaborator `<github-username>` to `prettybusysolutions-eng/xzenia-attestation` with role `write` for CASE-0002 governance migration.
 
 ## Expected immediate post-approval actions
 1. add collaborator
