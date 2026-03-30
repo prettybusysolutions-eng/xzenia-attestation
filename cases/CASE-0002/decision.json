@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-0002",
+  "recorded_at": "2026-03-30T04:05:00Z",
+  "decision_type": "recommendation",
+  "decision": "Treat multi-principal governance migration as the next mandatory hardening threshold for the attestation repo.",
+  "basis": [
+    "Branch protection is real but not sufficient because admin bypass remains observed and documented.",
+    "Single-principal review cannot prove separation-of-duties.",
+    "System 6 needs stronger external governance evidence before GitHub-native attestation can be considered mature."
+  ],
+  "verification_ref": "GOVERNANCE-BASELINE.md#observed-bypass-evidence"
+}

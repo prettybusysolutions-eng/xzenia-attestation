@@ -1,0 +1,19 @@
+{
+  "case_id": "CASE-0002",
+  "created_at": "2026-03-30T04:05:00Z",
+  "source_system": "github_governance",
+  "source_event_id": "prettybusysolutions-eng/xzenia-attestation#governance-migration",
+  "recommendation": "Add a second governed principal and migrate the attestation repository from single-principal/admin-bypass governance toward true separation-of-duties.",
+  "verification_path": "github://prettybusysolutions-eng/xzenia-attestation/settings/branches",
+  "status": "open",
+  "evidence": [
+    {
+      "type": "governance_baseline",
+      "ref": "GOVERNANCE-BASELINE.md"
+    },
+    {
+      "type": "system6_report",
+      "ref": "../xzenia-saas/TASK-REPORT-SYSTEM6-007.md"
+    }
+  ]
+}
