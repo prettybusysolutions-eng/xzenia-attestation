@@ -28,6 +28,9 @@ A claim counts only when it is tied to:
 - `reports/` — generated summaries
 - `schemas/` — JSON schemas for case/action/outcome/verification
 - `.github/workflows/` — verification and attestation workflows
+- `.github/CODEOWNERS` — ownership baseline for governed review
+- `.github/pull_request_template.md` — claim/verification discipline for PRs
+- `GOVERNANCE-BASELINE.md` — separates enforced controls from policy-only intent
 
 ## First objective
 Close `CASE-0001` through the full governed loop:

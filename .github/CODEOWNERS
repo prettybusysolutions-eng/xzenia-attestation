@@ -1,0 +1,9 @@
+# Xzenia Attestation CODEOWNERS
+# Current single-principal baseline. Move to multi-principal ownership when a second governed reviewer exists.
+
+* @prettybusysolutions-eng
+/cases/ @prettybusysolutions-eng
+/ledger/ @prettybusysolutions-eng
+/reports/ @prettybusysolutions-eng
+/schemas/ @prettybusysolutions-eng
+/.github/ @prettybusysolutions-eng
