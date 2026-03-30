@@ -8,13 +8,20 @@ This document separates **what is already enforced** from **what is still policy
 - workflow validates the required repository structure
 - changes can be surfaced through pull requests
 - CODEOWNERS and PR template exist to make review intent explicit
+- default branch protection is enabled on `master`
+- required status check: `Attestation Check`
+- required pull request review count: `1`
+- CODEOWNERS review is required by branch protection
+- stale reviews are dismissed
+- conversation resolution is required
+- linear history is required
+- force pushes are disabled
+- branch deletions are disabled
+- merged branches are auto-deleted
 
 ## Not enforced yet
-- protected default branch
-- required approving review before merge
-- required status checks for merge
 - signed commit enforcement
-- admin restrictions / bypass controls
+- admin restrictions / bypass controls (`enforce_admins` is still false)
 - multi-principal review separation
 
 ## Current branch reality
@@ -29,3 +36,6 @@ The repository currently uses `master` as the default branch. Policy language sh
 
 ## Honesty rule
 A governance claim counts only if GitHub settings or public repo state actually enforce it. Policy text alone is not proof.
+
+## Current honest boundary
+The repository now has real branch protection, but it is still a single-principal setup and admins are not yet forced through the same review gate (`enforce_admins=false`). That means governance is materially stronger than before, but not yet strong separation-of-duties proof.
