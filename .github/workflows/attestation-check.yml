@@ -1,0 +1,23 @@
+name: Attestation Check
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  attestation-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required structure exists
+        run: |
+          test -f README.md
+          test -f POLICY.md
+          test -f schemas/case.schema.json
+          test -f schemas/outcome.schema.json
+          test -f ledger/events.jsonl
+          test -f cases/CASE-0001/case.json
+      - name: Show case payload
+        run: cat cases/CASE-0001/case.json
