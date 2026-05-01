@@ -1,8 +1,17 @@
 # Xzenia Attestation
 
-A reality-binding repository for Xzenia.
+Cryptographic and systemic verification protocols for zero-trust environments.
 
-This repository exists to prove one thing: whether the system can bind recommendation, approval, execution, verification, and outcome to externally visible, stable identifiers under real governance.
+Xzenia Attestation is part of the operator kit for binding claims, actions, verification, and outcomes to durable evidence under governed conditions.
+
+## Role in the system
+Trust is not assumed.
+It is established through visible, verifiable state transitions.
+
+## Standard
+Bind the claim.
+Verify the action.
+Preserve the evidence.
 
 ## What this repo is
 - A public attestation surface
